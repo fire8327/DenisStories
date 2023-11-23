@@ -8,26 +8,315 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Главная</title>
 </head>
-<body>
-    <header class="w-full relative">
-        <div class="flex items-center justify-between container mx-auto px-4">
-            <a href="">
-                <img src="" alt="">
-            </a>
-            <nav class="flex items-center gap-4 max-lg:flex-col bg-white max-lg:absolute max-lg:w-full top-0 left-0 max-lg:-translate-y-full transition-all duration-500 max-lg:py-4" id="menu">
-                <a href="">Home</a>
-                <a href="">About Us</a>
-                <a href="">Services</a>
-                <a href="">Pages</a>
-                <a href="">Contact Us</a>
-            </nav>
-            <button id="toggler" type="button" class="flex flex-col w-6 gap-1 lg:hidden">
-                <span class="w-full rounded-full bg-black h-0.5"></span>
-                <span class="w-full rounded-full bg-black h-0.5"></span>
-                <span class="w-full rounded-full bg-black h-0.5"></span>
-            </button>
+<body class="bg-[url(Assets/Images/body/bg.png)] bg-cover">
+    <header class="w-full bg-[#2B2824]">
+        <div class="container mx-auto flex items-center text-white text-2xl leading-[100.926%] font-[450]">
+            <a href="" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Читать онлайн</a>
+            <a href="" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Аудио чтение</a>
+            <a href="" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Смотреть онлайн</a>
+            <a href="" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Биография писателя</a>
+            <a href="" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Другие произведения</a>
         </div>
-    </header>  
+    </header>
+
+    <main class="w-full">
+        <div class="relative h-screen">
+            <img src="Assets/Images/main/firstScreen.png" alt="" class="w-full h-full object-cover">
+            <div class="absolute flex items-center gap-9 left-[163px] top-[75px]">
+                <a href="">
+                    <img src="Assets/Images/main/logo1.png" alt="" class="mix-blend-multiply">
+                </a>
+                <a href="">
+                    <img src="Assets/Images/main/logo2.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="container mx-auto flex flex-col py-[190px] gap-[70px] items-center">
+            <p class="text-[60px] text-[#2B2824] text-center">“Денискины рассказы”</p>
+            <div class="grid grid-cols-3 gap-3 text-[#4D4D4D] text-[35px] text-center">
+                <p class="mix-blend-multiply leading-[40px]">Цикл рассказов, посвящённый случаям из жизни дошкольника, а затем ученика младших классов школы Дениса Кораблёва.</p>
+                <p class="mix-blend-multiply leading-[40px]">Прототипом главного героя рассказов стал сын писателя, Денис Драгунский</p>
+                <p class="mix-blend-multiply leading-[40px]">Рассказы являются классикой детской литературы. В 2012 году вошли в список “100 книг для школьников”</p>
+            </div>
+        </div>
+        <div class="w-full bg-[#2B2824] flex flex-col items-center overflow-hidden">
+            <div class="w-full grid grid-cols-12 gap-12 pt-[25px] pb-[67px] -ml-2">
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+            </div>
+            <div class="flex items-center justify-center gap-14 text-[35px]">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="50" viewBox="0 0 27 50" fill="none">
+                        <path d="M24 3L3.41421 23.5858C2.63317 24.3668 2.63317 25.6332 3.41421 26.4142L24 47" stroke="white" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="flex flex-col gap-7 items-center text-center self-start">
+                    <p class="text-[#AEAEAE]">Экранизация 1960 года</p>
+                    <img src="Assets/Images/main/slider1.png" alt="">
+                    <p class="text-white">Весёлые истории</p>
+                </div>
+                <div class="flex flex-col gap-7 items-center text-center self-start">
+                    <p class="text-[#AEAEAE]">Экранизация 1970 года</p>
+                    <img src="Assets/Images/main/slider2.png" alt="">
+                    <p class="text-white">Денискины рассказы</p>
+                </div>
+                <div class="flex flex-col gap-7 items-center text-center self-start">
+                    <p class="text-[#AEAEAE]">Экранизация 1979 года</p>
+                    <img src="Assets/Images/main/slider3.png" alt="">
+                    <p class="text-white">Приключения <br> Дениса Кораблёва</p>
+                </div>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="50" viewBox="0 0 27 50" fill="none">
+                        <path d="M3 3L23.5858 23.5858C24.3668 24.3668 24.3668 25.6332 23.5858 26.4142L3 47" stroke="white" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full grid grid-cols-12 gap-12 pb-[25px] pt-[67px] -ml-2">
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+                <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-[70px] items-center text-center pt-[190px] pb-[70px] bg-white backdrop-blur-[156.25px]">
+            <p class="text-[#2B2824] text-[60px]">Список произведений</p>
+            <div class="grid grid-cols-3 gap-3 container mx-auto">
+                <ul class="flex flex-col gap-2 list-disc list-inside items-start text-start">
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Англичанин Павля</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Арбузный переулок</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Белые амадины</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">…Бы (Если бы я был взрослым)</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Главные реки</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Гусиное горло</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Где это видано, где это слыхано…</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Двадцать лет под кроватью</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Девочка на шаре</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Дениска размечтался</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Друг детства</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Дымка и Антон Дядя</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Павел истопник</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Живой уголок</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Заколдованная буква</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Запах неба и махорочки</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Здоровая мысль</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Зелёнчатые леопарды</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">И мы!</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Как я гостил у дяди Миши</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Когда я был маленький</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Кот в сапогах</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col gap-2 list-disc list-inside items-start text-start">
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Красный шарик в синем небе</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Куриный бульон</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Мой знакомый медведь</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Мотогонки по отвесной стене</a>
+                    </li>  
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">На Садовой большое движение</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Надо иметь чувство юмора</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Не пиф, не паф!</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Не хуже вас, цирковых</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Независимый Горбушка</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Ничего изменить нельзя</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Одна капля убивает лошадь</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Он живой и светится…</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Первый день</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Подзорная труба</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Похититель собак</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Поют колёса — тра-та-та</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Приключение</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Профессор кислых щей</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Рабочие дробят камень</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Разговаривающая ветчина</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Пожар во флигеле, или Подвиг во льдах…</a>
+                    </li>  
+                </ul>
+                <ul class="flex flex-col gap-2 list-disc list-inside items-start text-start">
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Расскажите мне про Сингапур</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Ровно 25 кило</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Рыцари Сверху вниз, наискосок!</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Сестра моя Ксения (Новогодний подарок)</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Синий кинжал</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Слава Ивана Козловского</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Слон и радио</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Смерть шпиона Гадюкина</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Сражение у чистой речки</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Старый мореход</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Тайное становится явным</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Тиха украинская ночь…</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Третье место в стиле баттерфляй</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Удивительный день</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Фантомас</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Хитрый способ</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Человек с голубым лицом</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Чики-брык</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Что любит Мишка</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Что я люблю…</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">…И чего не люблю!</a>
+                    </li> 
+                    <li class="">
+                        <a href="" class="absolute text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">Шляпа гроссмейстера</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="text-white bg-[#68645C] transition-all duration-500 hover:bg-[#2B2824] font-semibold group">
+                    <a href="" class="px-12 py-6 flex flex-col w-full h-full">
+                        <span class="w-fit">Читать онлайн</span>
+                        <span class="w-0 bg-white h-px group-hover:w-full transition-all duration-500"></span>
+                    </a>
+                </div>
+                <div class="text-white bg-[#68645C] transition-all duration-500 hover:bg-[#2B2824] font-semibold group">
+                    <a href="" class="px-12 py-6 flex flex-col w-full h-full">
+                        <span class="w-fit">Слушать аудио</span>
+                        <span class="w-0 bg-white h-px group-hover:w-full transition-all duration-500"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
 
