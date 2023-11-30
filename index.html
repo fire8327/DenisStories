@@ -7,10 +7,73 @@
     <link rel="stylesheet" href="Assets/CSS/custom.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Главная</title>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="Анимация.js"></script>
+    <script>
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+            canvas = document.getElementById("canvas");
+            anim_container = document.getElementById("animation_container");
+            dom_overlay_container = document.getElementById("dom_overlay_container");
+            var comp=AdobeAn.getComposition("0461B534D8D9C9478EE2924DD19BCCA4");
+            var lib=comp.getLibrary();
+            createjs.MotionGuidePlugin.install();
+            var loader = new createjs.LoadQueue(false);
+            loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+            loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+            var lib=comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+        function handleFileLoad(evt, comp) {
+            var images=comp.getImages();	
+            if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+        }
+        function handleComplete(evt,comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib=comp.getLibrary();
+            var ss=comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for(i=0; i<ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+            }
+            exportRoot = new lib.АнимацияОнживойисветитсябезмузыкиПономаренкоАА();
+            stage = new lib.Stage(canvas);	
+            //Registers the "tick" event listener.
+            fnStartAnimation = function() {
+                stage.addChild(exportRoot);
+                createjs.Ticker.framerate = lib.properties.fps;
+                createjs.Ticker.addEventListener("tick", stage);
+                stage.addEventListener("tick", stage._handleTick);
+            }	    
+            //Code to support hidpi screens and responsive scaling.
+            AdobeAn.makeResponsive(true,'both',true,1,[canvas,anim_container,dom_overlay_container]);	
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+
+        let audio = new Audio("Assets/Audio/1.mp3")
+        function startAnimate() {
+            init()
+
+            let animateToggler = document.querySelector("#animateToggler")
+            animateToggler.classList.add("hidden")            
+
+            audio.pause()
+            audio.currentTime = 0
+            audio.play()
+            /* let audio = document.createElement('audio');
+            audio.style.display = "none";
+            audio.src = "Assets/Audio/1.mp3";
+            audio.autoplay = true;
+            audio.loop = true;
+            document.body.appendChild(audio); */
+        }
+    </script>
 </head>
 <body class="bg-[url(Assets/Images/body/bg.png)] bg-cover">
     <header class="w-full bg-[#2B2824]">
-        <div class="max-w-[1620px] mx-auto flex items-center text-white text-2xl leading-[100.926%] font-[450]">
+        <div class="max-w-[1620px] mx-auto flex items-center justify-center text-white text-2xl leading-[100.926%] font-[450]">
             <a href="" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Читать онлайн</a>
             <a href="" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Аудио чтение</a>
             <a href="" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Смотреть онлайн</a>
@@ -324,6 +387,14 @@
         </div>
         <div class="flex flex-col gap-[70px] pt-[120px] max-w-[1620px] mx-auto">
             <p class="text-[#2B2824] text-[60px] text-center Grotescque-Heavy">Новое прочтение</p>
+            <div class="relative w-full min-h-[900px]" onclick="startAnimate()">
+                <div id="animation_container" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#000015]" style="width:1620px; height:900px">
+                    <canvas class="bg-[#000015]" id="canvas" width="1620" height="900" style="position: absolute; display: block;"></canvas>
+                    <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1620px; height:900px; position: absolute; left: 0px; top: 0px; display: block;">
+                    </div>
+                </div>
+                <img src="Assets/Images/main/play.svg" id="animateToggler" alt="" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-20">
+            </div>
         </div>     
         <div class="flex flex-col gap-[70px] py-[190px] max-w-[1620px] mx-auto">
             <p class="text-[#2B2824] text-[60px] text-center Grotescque-Heavy">Немного о писателе</p>
