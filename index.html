@@ -76,10 +76,10 @@
 <body class="bg-[url(Assets/Images/body/bg.png)] bg-cover">
     <header class="w-full bg-[#2B2824]">
         <div class="max-w-[1620px] mx-auto flex items-center justify-center text-white text-2xl leading-[100.926%] font-[450]">
-            <a href="" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Читать онлайн</a>
-            <a href="" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Аудио чтение</a>
-            <a href="" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Смотреть онлайн</a>
-            <a href="" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Биография писателя</a>
+            <a href="#list" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Читать онлайн</a>
+            <a href="#list" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Аудио чтение</a>
+            <a href="#tape" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Смотреть онлайн</a>
+            <a href="#bio" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Биография писателя</a>
             <a href="" class="py-5 px-14 transition-colors duration-500 bg-transparent hover:bg-[#68645C]">Другие произведения</a>
         </div>
     </header>
@@ -104,7 +104,7 @@
                 <p class="mix-blend-multiply leading-[40px]">Рассказы являются классикой детской литературы. В 2012 году вошли в список “100 книг для школьников”</p>
             </div>
         </div>
-        <div class="w-full bg-[#2B2824] flex flex-col items-center overflow-hidden">
+        <div class="w-full bg-[#2B2824] flex flex-col items-center overflow-hidden" id="tape">
             <div class="w-full grid grid-cols-12 gap-12 pt-[25px] pb-[67px] -ml-2">
                 <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
                 <div class="w-[118px] h-[60px] bg-[#AEAEAE] rounded-[11px]"></div>
@@ -171,7 +171,7 @@
             </div>
         </div>
         <div class="flex flex-col gap-[70px] items-center text-center pt-[190px] pb-[70px] bg-white backdrop-blur-[156.25px] px-4">
-            <p class="text-[#2B2824] text-[60px] Grotescque-Heavy">Список произведений</p>
+            <p class="text-[#2B2824] text-[60px] Grotescque-Heavy" id="list">Список произведений</p>
             <div class="grid grid-cols-3 gap-3 text-start text-[35px] w-full max-w-[1620px] mx-auto">
                 <ul class="flex flex-col gap-3 list-disc list-inside">
                     <li class="h-fit w-fit relative text-[#4D4D4D] after:absolute after:left-0 after:bottom-0 after:bg-[#4D4D4D] after:w-0 after:h-px after:transition-all after:duration-500 hover:after:w-full">
@@ -399,7 +399,7 @@
             </div>
         </div>     
         <div class="flex flex-col gap-[70px] py-[190px] max-w-[1620px] mx-auto">
-            <p class="text-[#2B2824] text-[60px] text-center Grotescque-Heavy">Немного о писателе</p>
+            <p class="text-[#2B2824] text-[60px] text-center Grotescque-Heavy" id="bio">Немного о писателе</p>
             <div class="flex items-start gap-14">
                 <div class="flex flex-col gap-11 w-[40%]">
                     <div class="flex flex-col gap-5">
